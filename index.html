@@ -1,21 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Tesda</title>
-<script>document.createElement("myElement")</script>
-<style>
-myElement {
-  display: block;
-  background-color: #dddddd;
-  padding: 50px;
-  font-size: 30px;
-} 
-</style> 
+  <meta charset="UTF-8">
+  <title>Restaurant Finder App</title>
+  <style>
+    section,header,nav,article,aside,footer {
+      display: block
+    }
+    header {
+      clear: both;
+      text-align: center;
+      padding: 20px 0;
+      border: 1px solid royalblue;
+    }
+    nav {
+      float: right;
+    }
+    map {
+      display: block;
+      background-color: #dddddd;
+      padding: 50px;
+      font-size: 30px;
+    } 
+    .left-section {
+      float: left;
+      width: 50%;
+    }
+    .right-section {
+      float: right;
+      width: 50%;
+    }
+    footer {
+      clear: both;
+      text-align: center;
+      padding: 20px 0;
+      border: 1px solid royalblue;
+    }
+  </style> 
 </head>
 <body>
 
-<h1>A Heading</h1>
-<myElement>My Hero Element</myElement>
+  <header>Eat Street APP</header>
+  
+  <section class="left-section">
+    <nav>
+        <button>All</button> 
+        <button>Favorites</button> 
+    </nav>
+    <aside>
+      <h5>List of Restaurant</h5>
+      <ul>
+        <li>Tao Restaurant</li>
+        <li>Pizza Hut</li>
+        <li>Spirit Restaurant</li>
+        <li>Rodeo</li>
+      </ul>
+    </aside>
+  </section>
 
+  <section class="right-section">
+    <map>My Map Element Here</map>
+    <form action="/action_page.php">
+      <br>
+      Type of Restaurant:
+      <input type="text" name="firstname" value="Restaurant">
+      <br>
+      Average meal cost:
+      <input type="text" name="lastname" value="meal">
+      <br>
+      Last visited:
+      <input type="text" name="visited" value="visited"><br><br>
+      <input type="submit" value="Save">
+    </form>
+  </section>
+
+  <footer>Copy right's </footer>
+
+  <script>
+    document.createElement("map")
+  </script>
 </body>
 </html>
